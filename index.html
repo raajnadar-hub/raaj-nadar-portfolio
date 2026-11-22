@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="The creative portfolio of Raaj Nadar — Actor, Author, Screenwriter, Filmmaker and Creative, Executive & Content Producer.">
+  <title>Raaj Nadar | Creative Portfolio</title>
+  <style>
+    :root{--bg:#090909;--panel:#111;--panel2:#171511;--gold:#d6ad62;--gold2:#f0d69a;--text:#f5f1e8;--muted:#aaa49a;--line:rgba(214,173,98,.24);--max:1160px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none} .wrap{width:min(var(--max),calc(100% - 42px));margin:auto}
+    .topbar{position:sticky;top:0;z-index:20;background:rgba(9,9,9,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-size:17px;letter-spacing:3px;font-weight:800}.brand span{color:var(--gold)}
+    .navlinks{display:flex;gap:22px;align-items:center;font-size:12px;letter-spacing:1.3px;text-transform:uppercase;color:#d0cbc1}
+    .navlinks a:hover,.textlink:hover{color:var(--gold2)} .menu{display:none;background:none;border:1px solid var(--line);color:var(--gold);padding:8px 12px}
+    .hero{min-height:690px;display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:55px;padding:88px 0 95px;position:relative}
+    .eyebrow{color:var(--gold);letter-spacing:4px;text-transform:uppercase;font-size:11px;font-weight:bold}
+    h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(54px,8vw,100px);line-height:.98;letter-spacing:-3px;margin:22px 0 18px}
+    h1 span{color:var(--gold)} .roleline{font-size:clamp(13px,1.5vw,16px);letter-spacing:2px;text-transform:uppercase;color:#ded8cc;line-height:2}
+    .intro{max-width:610px;color:var(--muted);font-size:16px;margin:25px 0 32px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border:1px solid var(--gold);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:bold;transition:.2s}
+    .btn.primary{background:var(--gold);color:#111}.btn:hover{background:var(--gold2);color:#111;border-color:var(--gold2)}
+    .portrait{min-height:460px;border:1px solid var(--line);background:radial-gradient(ellipse at 50% 35%,#393022 0,#17130e 38%,#0c0b09 72%);display:flex;align-items:end;justify-content:center;position:relative;overflow:hidden}
+    .portrait:before{content:"";position:absolute;inset:18px;border:1px solid rgba(214,173,98,.22)}
+    .portrait-inner{position:relative;text-align:center;padding:30px 20px 48px}
+    .portrait-mark{font-family:Georgia,serif;font-size:clamp(100px,18vw,190px);line-height:1;color:rgba(214,173,98,.17);letter-spacing:-12px}
+    .portrait-note{font-size:10px;letter-spacing:2px;color:#b8a77f;text-transform:uppercase;margin-top:-8px}
+    .scroll{position:absolute;bottom:28px;left:0;color:#777;font-size:10px;letter-spacing:3px;text-transform:uppercase}
+    section{padding:90px 0;border-top:1px solid rgba(255,255,255,.06)} .section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:38px}
+    .kicker{font-size:10px;letter-spacing:3px;color:var(--gold);text-transform:uppercase}.section-title{font-family:Georgia,serif;font-size:clamp(34px,5vw,54px);font-weight:400;margin:8px 0 0;line-height:1.1}
+    .section-desc{max-width:490px;color:var(--muted);font-size:14px;margin:0}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px}.about-copy{font-family:Georgia,serif;font-size:24px;line-height:1.5;color:#e9e1d2}.about-copy em{color:var(--gold);font-style:normal}
+    .about-detail{color:var(--muted);font-size:15px}.tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}.tag{border:1px solid var(--line);padding:8px 12px;color:#d7c7a5;font-size:10px;letter-spacing:1px;text-transform:uppercase}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(145deg,#171511,#101010);border:1px solid var(--line);padding:25px;min-height:215px;display:flex;flex-direction:column;transition:.2s}.card:hover{transform:translateY(-4px);border-color:rgba(214,173,98,.65)}
+    .number{color:var(--gold);font-size:10px;letter-spacing:2px}.card h3{font-family:Georgia,serif;font-size:24px;font-weight:400;margin:15px 0 9px}.card p{font-size:13px;color:var(--muted);margin:0 0 22px}.card-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--gold);font-size:10px;letter-spacing:1.4px;text-transform:uppercase}
+    .pending{color:#8f887b;font-size:9px;letter-spacing:1px;border:1px solid #494238;padding:5px 7px}
+    .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.project{min-height:290px;border:1px solid var(--line);background:linear-gradient(160deg,#211b11,#111 68%);padding:25px;display:flex;flex-direction:column;justify-content:end;position:relative;overflow:hidden}
+    .project:before{content:"";position:absolute;width:230px;height:230px;border:1px solid rgba(214,173,98,.13);border-radius:50%;top:-95px;right:-80px;box-shadow:0 0 0 25px rgba(214,173,98,.025),0 0 0 50px rgba(214,173,98,.02)}
+    .project>*{position:relative}.project .type{color:var(--gold);font-size:10px;letter-spacing:2px;text-transform:uppercase}.project h3{font:400 32px Georgia,serif;margin:12px 0}.project p{color:var(--muted);font-size:13px;margin:0}
+    .credits{margin-top:14px;color:#d4c4a2;font-size:11px;line-height:1.6}
+    .contact{background:linear-gradient(120deg,#17130d,#0c0c0c);text-align:center;padding:85px 25px;border:1px solid var(--line)}
+    .contact h2{font:400 clamp(38px,6vw,65px) Georgia,serif;margin:12px 0}.contact p{color:var(--muted);max-width:620px;margin:0 auto 28px}
+    footer{padding:26px 0;color:#777;font-size:11px;letter-spacing:1px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:850px){.navlinks{display:none;position:absolute;top:72px;left:0;right:0;background:#0b0b0b;padding:20px 24px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.menu{display:block}.hero{grid-template-columns:1fr;gap:35px;padding:70px 0 85px}.portrait{min-height:340px}.scroll{display:none}.about-grid{grid-template-columns:1fr;gap:20px}.grid,.projects{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:560px){.wrap{width:min(100% - 30px,var(--max))}.nav{height:64px}.navlinks{top:64px}.grid,.projects{grid-template-columns:1fr}.card{min-height:185px}.section-head{display:block}.section-desc{margin-top:15px}.hero{min-height:auto;padding:65px 0 55px}h1{letter-spacing:-2px}.portrait{min-height:290px}section{padding:68px 0}}
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="#home">RAAJ <span>NADAR</span></a>
+    <button class="menu" id="menuBtn" aria-label="Open navigation">MENU</button>
+    <nav class="navlinks" id="navLinks">
+      <a href="#about">About</a><a href="#portfolio">Portfolio</a><a href="#projects">Recent Projects</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <section class="hero" id="home" style="border:0">
+      <div>
+        <div class="eyebrow">Creative Portfolio · India</div>
+        <h1>RAAJ<br><span>NADAR</span></h1>
+        <div class="roleline">Actor · Author · Screenwriter · Filmmaker<br>Creative, Executive &amp; Content Producer</div>
+        <p class="intro">A glimpse into my professional experience and creative work across literature, cinema, digital media, podcasting and filmmaking.</p>
+        <div class="actions"><a class="btn primary" href="#portfolio">Explore Portfolio</a><a class="btn" href="#contact">Professional Enquiries</a></div>
+      </div>
+      <div class="portrait" aria-label="Portrait placeholder">
+        <div class="portrait-inner"><div class="portrait-mark">RN</div><div class="portrait-note">Your portrait goes here</div></div>
+      </div>
+      <div class="scroll">Scroll to explore ↓</div>
+    </section>
+
+    <section id="about">
+      <div class="section-head"><div><div class="kicker">01 / The Creative Journey</div><h2 class="section-title">About Raaj</h2></div></div>
+      <div class="about-grid">
+        <div class="about-copy">Stories are my foundation. <em>Cinema is my language.</em> Creativity is the thread connecting every part of my work.</div>
+        <div class="about-detail">
+          I am Raaj Nadar — an actor, author, screenwriter and filmmaker working across creative development, production, digital content and performance. This portfolio brings together selected work and projects from my journey across the entertainment and media landscape.
+          <div class="tags"><span class="tag">Literature</span><span class="tag">Cinema</span><span class="tag">Digital Media</span><span class="tag">Podcasting</span><span class="tag">Direction</span><span class="tag">Production</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="section-head"><div><div class="kicker">02 / Selected Work</div><h2 class="section-title">The Portfolio</h2></div><p class="section-desc">A selection of creative work and professional contributions. Project links will be activated as the final URLs are added.</p></div>
+      <div class="grid">
+        <article class="card"><div class="number">01 / LITERATURE</div><h3>JULIET</h3><p>An original novel authored by Raaj Nadar. Available through online book platforms.</p><div class="card-foot"><span>Author · Novel</span><span class="pending">LINKS TO ADD</span></div></article>
+        <article class="card"><div class="number">02 / INDUSTRY PROFILE</div><h3>IMDb</h3><p>Film industry profile and selected professional credits.</p><div class="card-foot"><span>Filmography</span><span class="pending">LINK TO ADD</span></div></article>
+        <article class="card"><div class="number">03 / PODCAST</div><h3>The Raaj Nadar Show</h3><p>Selected podcast episodes and hosting work.</p><div class="card-foot"><span>Host</span><span class="pending">PLAYLISTS TO ADD</span></div></article>
+        <article class="card"><div class="number">04 / DIGITAL MEDIA</div><h3>Digital Advertisements</h3><p>Selected digital advertisement projects and brand communication work.</p><div class="card-foot"><span>Selected Campaigns</span><span class="pending">VIDEOS TO ADD</span></div></article>
+        <article class="card"><div class="number">05 / PERFORMANCE</div><h3>Acting</h3><p>Selected acting work across screen projects.</p><div class="card-foot"><span>Actor</span><span class="pending">VIDEO TO ADD</span></div></article>
+        <article class="card"><div class="number">06 / MUSIC &amp; DIRECTION</div><h3>Music Videos</h3><p>Selected music videos directed by me.</p><div class="card-foot"><span>Director</span><span class="pending">VIDEOS TO ADD</span></div></article>
+        <article class="card"><div class="number">07 / PRODUCTION</div><h3>Selected Projects</h3><p>Selected projects with executive production contributions.</p><div class="card-foot"><span>Executive Producer</span><span class="pending">VIDEOS TO ADD</span></div></article>
+        <article class="card"><div class="number">08 / CONTENT</div><h3>Content Leadership</h3><p>Selected work reflecting content development and creative leadership.</p><div class="card-foot"><span>Content Head</span><span class="pending">VIDEOS TO ADD</span></div></article>
+        <article class="card"><div class="number">09 / CREATIVE PRACTICE</div><h3>Filmmaking</h3><p>Storytelling, screenwriting, creative development and filmmaking.</p><div class="card-foot"><span>Creative Practice</span><span class="pending">MORE TO COME</span></div></article>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-head"><div><div class="kicker">03 / Current &amp; Recent Work</div><h2 class="section-title">Recent Projects</h2></div><p class="section-desc">Selected film and digital projects associated with my recent professional journey.</p></div>
+      <div class="projects">
+        <article class="project"><div class="type">Feature Film</div><h3>Tarzan</h3><p>Feature film project.</p><div class="credits">Produced by Salman Khan Films, Bullseye Productions &amp; Neole Films.</div></article>
+        <article class="project"><div class="type">Digital Show</div><h3>The Bollywood<br>Park Show</h3><p>Digital entertainment show.</p><div class="credits">Produced by MOS Utility &amp; Starcraft Manoranjan.</div></article>
+        <article class="project"><div class="type">Feature Film</div><h3>Sapna</h3><p>Feature film project.</p><div class="credits">Produced by Starcraft Manoranjan.</div></article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact">
+        <div class="kicker">04 / Connect</div>
+        <h2>Let's Create<br><span style="color:var(--gold)">Something Meaningful.</span></h2>
+        <p>For professional collaborations, creative opportunities, media enquiries and project discussions.</p>
+        <a class="btn primary" href="mailto:ADD_YOUR_EMAIL_HERE">Contact Raaj Nadar</a>
+        <p style="font-size:10px;margin-top:18px">Email address and social links to be added before publishing.</p>
+      </div>
+    </section>
+  </div>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> RAAJ NADAR</span><span>ACTOR · AUTHOR · SCREENWRITER · FILMMAKER</span><a class="textlink" href="#home">BACK TO TOP ↑</a></div></footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const menuBtn=document.getElementById('menuBtn'), nav=document.getElementById('navLinks');
+  menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+</script>
+</body>
+</html>
