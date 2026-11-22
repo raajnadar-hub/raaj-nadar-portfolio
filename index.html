@@ -36,6 +36,11 @@
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(145deg,#171511,#101010);border:1px solid var(--line);padding:25px;min-height:215px;display:flex;flex-direction:column;transition:.2s}.card:hover{transform:translateY(-4px);border-color:rgba(214,173,98,.65)}
     .number{color:var(--gold);font-size:10px;letter-spacing:2px}.card h3{font-family:Georgia,serif;font-size:24px;font-weight:400;margin:15px 0 9px}.card p{font-size:13px;color:var(--muted);margin:0 0 22px}.card-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--gold);font-size:10px;letter-spacing:1.4px;text-transform:uppercase}
     .pending{color:#8f887b;font-size:9px;letter-spacing:1px;border:1px solid #494238;padding:5px 7px}
+    .links{display:flex;flex-direction:column;gap:8px;margin-top:18px;padding-top:14px;border-top:1px solid rgba(214,173,98,.16)}
+    .links a{color:var(--gold2);font-size:11px;letter-spacing:.4px}
+    .links a:hover{text-decoration:underline;color:#fff}
+    .card{min-height:245px}
+
     .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.project{min-height:290px;border:1px solid var(--line);background:linear-gradient(160deg,#211b11,#111 68%);padding:25px;display:flex;flex-direction:column;justify-content:end;position:relative;overflow:hidden}
     .project:before{content:"";position:absolute;width:230px;height:230px;border:1px solid rgba(214,173,98,.13);border-radius:50%;top:-95px;right:-80px;box-shadow:0 0 0 25px rgba(214,173,98,.025),0 0 0 50px rgba(214,173,98,.02)}
     .project>*{position:relative}.project .type{color:var(--gold);font-size:10px;letter-spacing:2px;text-transform:uppercase}.project h3{font:400 32px Georgia,serif;margin:12px 0}.project p{color:var(--muted);font-size:13px;margin:0}
@@ -88,14 +93,14 @@
     <section id="portfolio">
       <div class="section-head"><div><div class="kicker">02 / Selected Work</div><h2 class="section-title">The Portfolio</h2></div><p class="section-desc">A selection of creative work and professional contributions. Project links will be activated as the final URLs are added.</p></div>
       <div class="grid">
-        <article class="card"><div class="number">01 / LITERATURE</div><h3>JULIET</h3><p>An original novel authored by Raaj Nadar. Available through online book platforms.</p><div class="card-foot"><span>Author · Novel</span><span class="pending">LINKS TO ADD</span></div></article>
-        <article class="card"><div class="number">02 / INDUSTRY PROFILE</div><h3>IMDb</h3><p>Film industry profile and selected professional credits.</p><div class="card-foot"><span>Filmography</span><span class="pending">LINK TO ADD</span></div></article>
+        <article class="card"><div class="number">01 / LITERATURE</div><h3>JULIET</h3><p>An original novel authored by Raaj Nadar. Explore the book through these platforms.</p><div class="card-foot"><span>Author · Novel</span><span>BOOK LINKS</span></div><div class="links"><a href="https://www.flipkart.com/juliet/p/itmccc37a5010c10" target="_blank" rel="noopener">Buy on Flipkart ↗</a><a href="https://share.google/rgTZlMG3dV5ObMoWM" target="_blank" rel="noopener">Amazon ↗</a><a href="https://play.google.com/store/books/details/Raaj_N_Nadar_Juliet?id=N29nEAAAQBAJ" target="_blank" rel="noopener">Google Play Books ↗</a></div></article>
+        <article class="card"><div class="number">02 / INDUSTRY PROFILE</div><h3>IMDb</h3><p>Film industry profile and selected professional credits.</p><div class="card-foot"><span>Filmography</span><a href="https://www.imdb.com/name/nm2936869/?ref_=ext_shr" target="_blank" rel="noopener">VIEW PROFILE ↗</a></div></article>
         <article class="card"><div class="number">03 / PODCAST</div><h3>The Raaj Nadar Show</h3><p>Selected podcast episodes and hosting work.</p><div class="card-foot"><span>Host</span><span class="pending">PLAYLISTS TO ADD</span></div></article>
         <article class="card"><div class="number">04 / DIGITAL MEDIA</div><h3>Digital Advertisements</h3><p>Selected digital advertisement projects and brand communication work.</p><div class="card-foot"><span>Selected Campaigns</span><span class="pending">VIDEOS TO ADD</span></div></article>
         <article class="card"><div class="number">05 / PERFORMANCE</div><h3>Acting</h3><p>Selected acting work across screen projects.</p><div class="card-foot"><span>Actor</span><span class="pending">VIDEO TO ADD</span></div></article>
-        <article class="card"><div class="number">06 / MUSIC &amp; DIRECTION</div><h3>Music Videos</h3><p>Selected music videos directed by me.</p><div class="card-foot"><span>Director</span><span class="pending">VIDEOS TO ADD</span></div></article>
-        <article class="card"><div class="number">07 / PRODUCTION</div><h3>Selected Projects</h3><p>Selected projects with executive production contributions.</p><div class="card-foot"><span>Executive Producer</span><span class="pending">VIDEOS TO ADD</span></div></article>
-        <article class="card"><div class="number">08 / CONTENT</div><h3>Content Leadership</h3><p>Selected work reflecting content development and creative leadership.</p><div class="card-foot"><span>Content Head</span><span class="pending">VIDEOS TO ADD</span></div></article>
+        <article class="card"><div class="number">06 / MUSIC &amp; DIRECTION</div><h3>Music Videos</h3><p>Selected music videos directed by me.</p><div class="card-foot"><span>Director</span><span>3 SELECTED VIDEOS</span></div><div class="links"><a href="https://youtu.be/RufJclTnGbM?si=CMX99ocgRNj-LZhR" target="_blank" rel="noopener">Watch music video 01 ↗</a><a href="https://youtu.be/unPwD6f7M5s?si=CHeI-nCn4L6Cx27T" target="_blank" rel="noopener">Watch music video 02 ↗</a><a href="https://youtu.be/Hwly0Eq0QKg?si=Vs3GXEiqk36x6rpP" target="_blank" rel="noopener">Watch music video 03 ↗</a></div></article>
+        <article class="card"><div class="number">07 / PRODUCTION</div><h3>Selected Projects</h3><p>Selected projects with executive production contributions.</p><div class="card-foot"><span>Executive Producer</span><span>2 SELECTED PROJECTS</span></div><div class="links"><a href="https://youtu.be/vCiHcr8u_Zw?si=Vhkb7oFDQdc5l5_z" target="_blank" rel="noopener">Watch project 01 ↗</a><a href="https://youtu.be/l9OyHGZWYD0?si=VUHfPn_fcYNDNogq" target="_blank" rel="noopener">Watch project 02 ↗</a></div></article>
+        <article class="card"><div class="number">08 / CONTENT</div><h3>Content Leadership</h3><p>Selected work reflecting content development and creative leadership.</p><div class="card-foot"><span>Content Head</span><span>2 SELECTED VIDEOS</span></div><div class="links"><a href="https://youtu.be/hQaONqIkrpY?si=tXt1X7AXASwmwXc0" target="_blank" rel="noopener">Watch content project 01 ↗</a><a href="https://youtu.be/hh4cr01cR1o?si=Fujh9YGgUj7d1QUy" target="_blank" rel="noopener">Watch content project 02 ↗</a></div></article>
         <article class="card"><div class="number">09 / CREATIVE PRACTICE</div><h3>Filmmaking</h3><p>Storytelling, screenwriting, creative development and filmmaking.</p><div class="card-foot"><span>Creative Practice</span><span class="pending">MORE TO COME</span></div></article>
       </div>
     </section>
@@ -114,8 +119,8 @@
         <div class="kicker">04 / Connect</div>
         <h2>Let's Create<br><span style="color:var(--gold)">Something Meaningful.</span></h2>
         <p>For professional collaborations, creative opportunities, media enquiries and project discussions.</p>
-        <a class="btn primary" href="mailto:ADD_YOUR_EMAIL_HERE">Contact Raaj Nadar</a>
-        <p style="font-size:10px;margin-top:18px">Email address and social links to be added before publishing.</p>
+        <span class="btn" style="opacity:.8">Professional enquiries</span>
+        <p style="font-size:10px;margin-top:18px">Professional email and social links will be added after confirmation.</p>
       </div>
     </section>
   </div>
